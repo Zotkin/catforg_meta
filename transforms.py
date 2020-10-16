@@ -12,12 +12,12 @@ transforms_train = Compose([
     ], p=0.8),
     RandomGrayscale(p=0.2),
     ToTensor(),
-    Normalize(mean=CIFAR10_MEAN, std=CIFAR10_STD)
+#    Normalize(mean=CIFAR10_MEAN, std=CIFAR10_STD)
 ])
 
 transforms_valid = transforms_train
 
 transforms_test = Compose([
     ToTensor(),
-    Normalize(mean=CIFAR10_MEAN, std=CIFAR10_STD)
+#    Normalize(mean=CIFAR10_MEAN, std=CIFAR10_STD)
     ])
